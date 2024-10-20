@@ -1,0 +1,16 @@
+.homeContainer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.headingTextContainer {
+    width: 50%;
+    height: 100%;
+}
+
+.heroImgContainer {
+    width: 50%;
+    height: 100%;
+}
