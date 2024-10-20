@@ -13,6 +13,7 @@ export const renderHome = (): void => {
     createHomeContainers();
     appendHomeContainers();
     renderHeroImg();
+    renderHeadingText()
 }
 
 const createHomeContainers = (): void => {
@@ -37,4 +38,16 @@ const renderHeroImg = () => {
     heroImg.classList.add('heroImg');
     heroImg.src = './mercedes-hero.png';
     heroImgContainer.appendChild(heroImg);   
+}
+
+const renderHeadingText = (): void => {
+    const heading1: HTMLHeadingElement = document.createElement('h1');
+    heading1.classList.add('heading1');
+    heading1.innerHTML = 'Comfort<br>Security<br>Pricing ';
+    headingTextContainer.appendChild(heading1);
+
+    const heading2: HTMLHeadingElement = document.createElement('h2');
+    heading2.classList.add('heading2');
+    heading2.innerHTML = 'Why choose one when you can have all three.';
+    headingTextContainer.appendChild(heading2);
 }
