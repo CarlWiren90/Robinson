@@ -14,6 +14,7 @@ export const renderHome = (): void => {
     appendHomeContainers();
     renderHeroImg();
     renderHeadingText()
+    renderHomeButton();
 }
 
 const createHomeContainers = (): void => {
@@ -43,11 +44,18 @@ const renderHeroImg = () => {
 const renderHeadingText = (): void => {
     const heading1: HTMLHeadingElement = document.createElement('h1');
     heading1.classList.add('heading1');
-    heading1.innerHTML = 'Comfort<br>Security<br>Pricing ';
+    heading1.innerHTML = 'Comfort<br>Security<br>Technology ';
     headingTextContainer.appendChild(heading1);
 
     const heading2: HTMLHeadingElement = document.createElement('h2');
     heading2.classList.add('heading2');
-    heading2.innerHTML = 'Why choose one when you can have all three.';
+    heading2.innerHTML = 'Explore the new model-X.';
     headingTextContainer.appendChild(heading2);
+}
+
+const renderHomeButton = () => {
+    const homeButton: HTMLButtonElement = document.createElement('button');
+    homeButton.classList.add('homeButton');
+    homeButton.innerText = 'Explore'
+    headingTextContainer.appendChild(homeButton);
 }
