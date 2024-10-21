@@ -39,6 +39,8 @@ const renderHeroImg = () => {
     heroImg.classList.add('heroImg');
     heroImg.src = './mercedes-hero.png';
     heroImgContainer.appendChild(heroImg);   
+
+ 
 }
 
 const renderHeadingText = (): void => {
@@ -56,6 +58,6 @@ const renderHeadingText = (): void => {
 const renderHomeButton = () => {
     const homeButton: HTMLButtonElement = document.createElement('button');
     homeButton.classList.add('homeButton');
-    homeButton.innerText = 'Explore'
+    homeButton.innerText = 'Explore Model-X'
     headingTextContainer.appendChild(homeButton);
 }
