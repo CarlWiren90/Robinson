@@ -14,6 +14,8 @@ export const renderSelection = (): void  => {
     appendSelectionContainers();
     createSelectionHeaders();
     createCarDisplay();
+/*     createSelectionBackground();
+ */
 }
 
 const createSelectionContainers = (): void => {
@@ -24,6 +26,13 @@ const createSelectionContainers = (): void => {
 const appendSelectionContainers = (): void => {
     selection?.appendChild(selectionContainer);
 }
+
+/* const createSelectionBackground = (): void => {
+    const selectionBackground:HTMLImageElement = document.createElement('img');
+    selectionBackground.classList.add('selectionBackground');
+    selectionBackground.src = './background-2.jpg';
+    selectionContainer.appendChild(selectionBackground);
+} */
 
 const createSelectionHeaders = (): void => {
     const selectionHeading1:HTMLHeadingElement = document.createElement('h2');

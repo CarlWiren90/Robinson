@@ -12,6 +12,7 @@ let heroImgContainer!:HTMLDivElement;
 export const renderHome = (): void => {
     createHomeContainers();
     appendHomeContainers();
+    createHomeackground();
     renderHeroImg();
     renderHeadingText()
     renderHomeButton();
@@ -34,6 +35,12 @@ const appendHomeContainers = (): void => {
     homeContainer.appendChild(headingTextContainer);
 }
 
+const createHomeackground = (): void => {
+    const homeBackgroundContainer:HTMLDivElement = document.createElement('div');
+    homeBackgroundContainer.classList.add('homeBackgroundContainer');
+    homeContainer.appendChild(homeBackgroundContainer);
+}
+
 const renderHeroImg = () => {
     const heroImg:HTMLImageElement = document.createElement('img');
     heroImg.classList.add('heroImg');
@@ -51,7 +58,7 @@ const renderHeadingText = (): void => {
 
     const heading2: HTMLHeadingElement = document.createElement('h2');
     heading2.classList.add('heading2');
-    heading2.innerHTML = 'Explore the new model-X.';
+    heading2.innerHTML = 'The new model-X has arrived.';
     headingTextContainer.appendChild(heading2);
 }
 
