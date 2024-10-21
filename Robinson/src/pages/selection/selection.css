@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3em;
-    margin-bottom: 20em;
+    margin-bottom: 5em;
     margin-top: 2em;
     align-items: center;
     position: relative;
